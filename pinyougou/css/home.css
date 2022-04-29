@@ -1,0 +1,340 @@
+
+
+/* 导航模块 */
+.nav{
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+.nav .allGoods{
+    float: left;
+    width: 210px;
+    height: 45px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    background-color: #b1191a;
+}
+.w{
+    position: relative;
+}
+.nav .allModules{
+    position: absolute;
+    top: 10px;
+    left: 240px;
+}
+.nav .allModules li{
+    height: 31px;
+    float: left;
+    height: 21px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.nav .allGoods dt{
+    font-size: 14px;
+    line-height: 31px;
+    background-color: #C81623;
+    transition: all ease-in-out 0.6s;
+}
+.nav .allGoods dt a{
+    color: #fff;
+}
+.nav .allGoods dt:hover{
+    background-color: #fff;
+    padding-left: 10px;
+}
+.nav .allGoods dt:hover a{
+    color: #000;
+}
+/* 内容模块 */
+/* 内容模块上部分区域 */
+
+.upper{
+    position: absolute;
+    left: 210px;
+    width: 990px;
+    margin: 7px;
+}
+.upper .carouselDiagram{
+    position: relative;
+    width: 721px;
+    height: 455px;
+    padding-right: 7px;
+    background: url("../upload/focus1.png") no-repeat center;
+}
+.upper .carouselDiagram ul{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 80px;
+    margin-left: -35px;
+    
+}
+.upper .carouselDiagram ul li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 2px solid #666;
+    transition: all 0.3s;
+}
+.upper .carouselDiagram ul li:hover{
+    padding: 5px;
+}
+
+.upper .newsFlash{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    width: 250px;
+    height: 455px;
+}
+.upper .newsFlash .newsFlash_h{
+    height: 22px;
+    margin-bottom: 10px;
+    border-top: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+.upper .newsFlash .newsFlash_h h3{
+    border-bottom: 1px solid #e4e4e4;
+    margin: 5px 15px 0 10px;
+    padding: 5px 15px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.upper .newsFlash .newsFlash_b{
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.upper .newsFlash .newsFlash_b  .newsFlash_b_up li{
+    height: 25px;
+    padding: 15px 15px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.upper .newsFlash .newsFlash_b  .newsFlash_b_low{
+    margin-top: 12px;
+    width: 100%;
+}
+.upper .newsFlash .newsFlash_b  .newsFlash_b_low li{
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-top: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    background: url(../images/icons.png) no-repeat; 
+}
+.upper .newsFlash .newsFlash_b  .newsFlash_b_low li:nth-of-type(4n){
+    border-right: none;
+}
+.upper .newsFlash .newsFlash_b  .newsFlash_b_low li a{
+    display: block;
+    width: 100%; 
+    height: 100%;
+    text-align: center;
+    line-height: 110px;
+}
+.upper .newsFlash .newsFlash_f{
+     position: absolute; 
+     bottom: 0px; 
+    /* position: absolute; 注意：快报模块未设置宽度时，这里用绝对定位的话会使整个快报的布局一行只显示一个元素 */
+}
+/* 内容模块中间区域，精品推荐 */
+.middle{
+    position: absolute;
+    top: 465px;
+    float: left; 
+    margin-top: 10px;
+} 
+.middle .recommendedToday{
+    width: 1200px;
+    height: 165px;
+}
+.middle .recommendedToday .rctLeft{
+    float: left;
+    width: 200px;
+    height: 165px;
+    background: #5c5251 url(../images/clock.png) no-repeat center 35px;
+}
+.middle .recommendedToday .rctLeft h3{
+    width: 200px;
+    height: 165px;
+    font-size: 18px;
+    color:#fff;
+    text-align: center;
+    line-height: 230px;
+}
+.middle .recommendedToday .rctRight{
+    float: left;
+}
+.middle .recommendedToday .rctRight ul{
+    float: left;
+    width: 1000px;
+    height: 165px;
+    background-color: #eaeaea;
+}
+.middle .recommendedToday .rctRight ul li{
+    display: inline-block;
+    width: 248px;
+    height: 160px;
+    margin-top: 2px 0 0 0;
+}
+.middle .recommendedToday .rctRight ul li:nth-child(4){
+    width: 240px;
+}
+.middle .recommendedToday .rctRight ul li:nth-child(4) img{
+    width: 240px;
+}
+.middle .recommendedToday .rctRight ul li:nth-child(-n+3){
+    border-right: 1px solid #f7f7f7e7;
+}
+/*  内容模块下半部区域 核心 */
+.lower{
+    position: absolute;
+    top: 680px;
+}
+.lower .homeAppliances{
+    width: 1200px;
+    height: 392px;
+}
+.lower .homeAppliances .homeAppliances_hd{
+    height: 30px; 
+    border-bottom: 2px solid #c81623;
+}
+.lower .homeAppliances .homeAppliances_hd h3{
+    float: left;
+    font-size: 19px;
+    line-height: 30px;
+    color: #c81623;
+}
+.lower .homeAppliances .homeAppliances_hd ul{
+    float: right;
+    height: 30px;
+}
+.lower .homeAppliances .homeAppliances_hd ul li{
+    float: left;
+    height: 12px;
+    margin: 12px 0 15px 15px;
+    padding-right: 10px;
+    border-right: 1px solid #666;
+    color: #666;
+    line-height: 12px;
+}
+.lower .homeAppliances .homeAppliances_hd ul li a{
+    float: right;
+}
+.lower .homeAppliances .homeAppliances_hd ul li:last-child{
+    border: 0;
+}
+
+.lower .homeAppliances .homeAppliances_bd{
+    height: 362px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole li{
+    float: left;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l1 .l1_up{
+    width: 209px;
+    height: 99px;
+    margin-bottom: 15px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l1 .l1_up li{
+    float: left;
+    width: 86px;
+    height: 33px;
+    margin: 0 0 0 10px;
+    border-bottom: 1px solid #666;
+    line-height: 33px;
+    text-align: center;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l2{
+    position: relative;
+    width: 333px;
+    height: 363px;
+}
+
+.lower .homeAppliances .homeAppliances_bd .whole .l2 .btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -40px;
+    padding: 10px;
+    width: 80px;
+    height: 36px; 
+    
+}
+
+.lower .homeAppliances .homeAppliances_bd .whole .l2 .btn li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    border-radius: 50%;
+    border: 2px solid #666;
+    transition: all 0.3s;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l2 .btn li:hover{
+    padding: 2px;
+}
+.wf{
+    width: 329px;
+    height: 360px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l3{
+    width: 230px;
+}
+
+
+.lower .homeAppliances .homeAppliances_bd .whole .l3 a{
+    width: 230px;
+    height: 180px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l3 a img{
+    width: 200px;
+    height: 170px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l4{
+    width: 206px;
+    height: 360px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l4 a img{
+    width: 200px;
+    height: 340px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l5{
+    width: 222px;
+    height: 360px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l5 a{
+    height: 180px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l5 img{ 
+    width: 211px;
+    height: 160px;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l3 a{
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.lower .homeAppliances .homeAppliances_bd .whole .l4,.l5 a{
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.lower .homeAppliances .homeAppliances_bd .whole a{
+    transition: all 0.3s;
+}
+.lower .homeAppliances .homeAppliances_bd .whole a:hover{
+    padding: 2px;
+}
+
+
+
+
+

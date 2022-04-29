@@ -1,0 +1,105 @@
+.nav{
+    height: 50px;
+    border-bottom: 2px solid #b1191a;
+    line-height: 50px;
+    .nav_left{
+        float: left;
+        li{
+            float: left;
+            margin: 5px 20px;
+            font-size: 20px;
+        }
+    }
+    .nav_right{
+        float: right;
+        margin-right: 100px;
+        li{
+            float: left;
+            padding: 5px 15px;
+            font-size: 13px;
+        }
+        li:nth-child(8) a::after{
+            content: '\e920';
+            font-family: 'icomoon';
+            font-size: 13px;
+        }
+    }
+}
+.goods{
+    ul{
+        float: left;
+    }
+    .iphone_6s{
+        position: relative;
+        width: 290px;
+        height: 458px;
+        margin: 5px;
+        .img img{
+            width: 100%;
+            height: 100%;
+        }
+        .introduce{
+            width: 100%;
+            height: 50px;
+            padding: 0 3px;
+            font-size: 14px;
+            color: #666;
+        }
+        .price{
+            width: 100%;
+            height: 35px;
+            font-size: 25px;
+            color: red;
+            i{
+                padding-left: 0;
+                font-size: 16px;
+                font-weight: 700;
+                color: #666; 
+                text-decoration: line-through;
+            }
+        }
+        .progress{
+            width: 100%;
+            height: 30px;
+            padding-left: 6px;
+            line-height: 30px;
+            font-size: 16px;
+            color: #666;
+            div{
+                display: inline-block;
+                width: 100px;
+                height: 16px;
+                margin: -2px 5px;
+                
+                border: 1px solid red;
+                border-radius: 8px;
+                i{
+                    display: block;
+                    width:50%;
+                    height: 100%;
+                    border-radius: 8px;
+                    background-color: red;
+                }
+            }
+        }
+        .purchase{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 35px;
+            background-color: #b1191a;
+            font-size: 20px;
+            text-align: center;
+           a{
+               color: #fff;
+           }
+        }
+    }
+    ul:hover{
+        border: 3px solid #b1191a;
+    }
+
+}
+.footer{
+    top: 1200px;
+}
